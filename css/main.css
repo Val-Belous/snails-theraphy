@@ -184,7 +184,7 @@ img {
 }
 
 .background {
-  background-image: url("/images/hero.jpg");
+  background-image: url("../../images/hero.jpg");
   max-width: 1600px;
   height: 100vh;
   background-position: center;
