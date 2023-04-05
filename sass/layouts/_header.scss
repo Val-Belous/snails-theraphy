@@ -1,8 +1,11 @@
 .header {
-  margin-bottom: 35vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 20px;
+
+  @include mq(mobile-only) {
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -21,7 +24,7 @@
   gap: 20px;
 
   @include mq(mobile-only) {
-    justify-content: space-between;
+    display: none;
   }
 }
 
@@ -66,7 +69,8 @@
   align-items: center;
   color: var(--main-text-color);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--second-text-color);
   }
 }

@@ -12,12 +12,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Равликотерапія</title>
   </head>
   <body>
     <div class="background">
-      <header class="header">
+      <header class="header container">
         <nav class="navbar">
           <ul class="header__list">
             <li class="header__item">
@@ -65,23 +66,36 @@
       </header>
       <!-- Hero -->
       <section id="hero">
-        <div class="container hero">
+        <div
+          class="container hero"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 class="hero__title">Равликотерапія</h1>
-          <p>новий спосіб покращити ваше здоров'я</p>
+          <p class="hero__description">новий спосіб покращити ваше здоров'я</p>
+          <button type="button" class="btn">Детальніше</button>
         </div>
       </section>
     </div>
     <main>
       <!-- About -->
       <section id="about">
-        <div class="about">
+        <div class="about container">
           <h2>
             Равликотерапія - це метод лікування та релаксації, який використовує
             живих равликів. Відомо, що равлики мають дивовижні властивості, які
             можуть покращити ваше здоров'я та допомогти вам зняти стрес.
           </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
+            porro.
+          </p>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

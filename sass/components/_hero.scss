@@ -7,17 +7,56 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  // background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   url("/images/hero.jpg");
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
+  margin-top: 20vh;
   color: var(--main-text-color);
   text-transform: uppercase;
   font-weight: bold;
+
+  @include mq(mobile-only) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: var(--bold-weight);
+  font-size: var(--medium-size);
+  line-height: 1.88;
+  letter-spacing: var(--secondary-ls);
+  color: var(--second-text-color);
+  background-color: var(--main-text-color);
+  border-radius: 15px;
+  border: 0;
+  margin-top: 15px;
+
+  max-width: 200px;
+  min-width: 200px;
+  padding: 10px 30px;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--main-text-color);
+    background-color: var(--second-text-color);
+  }
+
+  // @include mq(mobile-only) {
+  //   margin-top: 175px;
+  // }
 }
