@@ -1,0 +1,23 @@
+.background {
+  background-image: url("/images/hero.jpg");
+  max-width: 1600px;
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //   url("/images/hero.jpg");
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
