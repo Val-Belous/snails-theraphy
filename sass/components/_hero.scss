@@ -20,7 +20,7 @@
   height: 100%;
   object-fit: cover;
 
-  opacity: 0.9g5;
+  opacity: 0.95;
 }
 
 .hero {
@@ -43,13 +43,6 @@
 
 .btn {
   cursor: pointer;
-  font-weight: var(--bold-weight);
-  font-size: var(--medium-size);
-  line-height: 1.88;
-  letter-spacing: var(--secondary-ls);
-  color: var(--main-text-color);
-  background-color: inherit;
-
   border: 1px solid var(--main-text-color);
   margin-top: 15px;
 
@@ -61,16 +54,21 @@
   position: relative;
   overflow: hidden;
 
-  &:hover,
-  &:focus {
-    // color: var(--second-text-color);
-    // border: 1px solid var(--second-text-color);
-    color: var(--second-text-color);
+  font-weight: var(--bold-weight);
+  font-size: var(--medium-size);
+  line-height: 1.88;
+  letter-spacing: var(--secondary-ls);
+  color: var(--main-text-color);
+  background-color: inherit;
+
+  & a {
+    color: inherit;
   }
 
-  // @include mq(mobile-only) {
-  //   margin-top: 175px;
-  // }
+  &:hover,
+  &:focus {
+    color: var(--second-text-color);
+  }
 
   &::before {
     content: "";
