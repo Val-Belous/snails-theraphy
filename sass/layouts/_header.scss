@@ -1,7 +1,10 @@
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding-top: 20px;
+  z-index: 1000;
 
   @include mq(mobile-only) {
     justify-content: center;
@@ -34,7 +37,6 @@
 
   & li a {
     color: var(--main-text-color);
-    display: block;
     font-size: var(--medium-size);
     line-height: 1.1;
     font-weight: var(--bold-weight);
@@ -68,6 +70,10 @@
   display: flex;
   align-items: center;
   color: var(--main-text-color);
+  font-size: var(--medium-size);
+  line-height: 1.1;
+  font-weight: var(--bold-weight);
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
