@@ -22,6 +22,12 @@
     <div class="banner">
       <header class="header container">
         <nav class="navbar">
+          <a class="logo" href="index.html">
+            Snail<span>Therapy</span>
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-snail"></use>
+            </svg>
+          </a>
           <ul class="header__list">
             <li class="header__item">
               <a class="header__link" href="hero">Головна</a>
@@ -34,67 +40,119 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380954064160"
-              ><svg class="header__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              095 406 41 60</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380509482126"
-              ><svg class="header__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              050 948 21 26</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a
-              class="header-contacts__link"
-              href="https://www.instagram.com/na_beauty_therapy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="посилання на instagram"
-              ><svg class="header__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-              na_beauty_therapy</a
-            >
-          </li>
-        </ul>
       </header>
       <img src="./images/hero.jpg" alt="banner" />
       <!-- Hero -->
       <section id="hero">
-        <div
-          class="container hero"
-          data-aos="zoom-out"
-          data-aos-duration="2000"
-        >
-          <h1 class="hero__title">Равликотерапія</h1>
-          <p class="hero__description">новий спосіб покращити ваше здоров'я</p>
-          <button type="button" class="btn">
-            <a href="#about">Детальніше</a>
-          </button>
+        <div class="container hero">
+          <div>
+            <h1 class="hero__title">Равликотерапія</h1>
+            <p class="hero__description">
+              новий спосіб покращити ваше здоров'я
+            </p>
+            <button type="button" class="btn">
+              <a href="#about">Детальніше</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <ul class="hero-contacts">
+            <li class="hero-contacts__item">
+              <a class="hero-contacts__link" href="tel:+380954064160"
+                ><svg class="hero__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                095 406 41 60</a
+              >
+            </li>
+            <li class="hero-contacts__item">
+              <a class="hero-contacts__link" href="tel:+380509482126"
+                ><svg class="hero__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                050 948 21 26</a
+              >
+            </li>
+            <li class="hero-contacts__item">
+              <a
+                class="hero-contacts__link"
+                href="https://www.instagram.com/na_beauty_therapy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="посилання на instagram"
+                ><svg class="hero__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+                na_beauty_therapy</a
+              >
+            </li>
+          </ul>
         </div>
       </section>
     </div>
     <main>
       <!-- About -->
-      <section id="about">
-        <div class="about container">
-          <h2>
-            Равликотерапія - це метод лікування та релаксації, який використовує
-            живих равликів. Відомо, що равлики мають дивовижні властивості, які
-            можуть покращити ваше здоров'я та допомогти вам зняти стрес.
-          </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
-            porro.
-          </p>
+      <section id="about" class="about">
+        <div class="container about__container">
+          <h2>Равликотерапія це:</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <h3 class="about__item-title">Зменшення стресу та тривоги</h3>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-title">
+                Покращення кровообігу та стану шкіри
+              </h3>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-title">
+                Покращення імунної системи та загального самопочуття
+              </h3>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-title">
+                Підвищення настрою та психічного здоров'я
+              </h3>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-title">Зменшення запалення</h3>
+            </li>
+          </ul>
+          <div class="about__boxes">
+            <div>
+              <img src="./images/about2.jpg" alt="" />
+              <p>
+                Зменшення стресу та тривоги - одна з найбільш очевидних переваг
+                равликотерапії. Під час сеансу випаровування равликів
+                відбувається підвищення рівня серотоніну та інших гормонів, що
+                забезпечують відчуття комфорту та спокою.
+              </p>
+            </div>
+            <div>
+              <img src="./images/about3.png" alt="" />
+              <p>
+                Покращення кровообігу та стану шкіри - інший важливий аспект
+                равликотерапії. Равлики виробляють гелеподібну речовину, що
+                містить гіалуронову кислоту, колаген та інші корисні компоненти,
+                які живлять шкіру та сприяють її омолодженню. Крім того, масаж
+                равликами стимулює кровообіг та метаболізм, що сприяє зменшенню
+                отруєння та запалення шкіри.
+              </p>
+            </div>
+            <div>
+              <img src="./images/about4.jpg" alt="" />
+              <p>
+                Зменшення запалення - равлики містять антиоксиданти та інші
+                активні речовини, які зменшують запалення в організмі. Вони
+                допомагають підвищити активність імунної системи та боротися з
+                вірусами та бактеріями. <br />
+                Підвищення настрою та психічного здоров'я - релаксуючий ефект
+                равликотерапії допомагає зняти стрес та покращити настрій.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
