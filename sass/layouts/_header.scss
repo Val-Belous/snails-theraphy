@@ -19,19 +19,16 @@
 
 .logo {
   display: flex;
+  align-items: flex-end;
   font-weight: var(--bold-weight);
   font-size: var(--medium-size);
   line-height: 1.17;
   letter-spacing: var(--main-ls);
   color: var(--main-text-color);
 
-  & span {
-    color: black;
-  }
-
   & svg {
     margin-left: 5px;
-    fill: #a96728;
+    fill: var(--accent-text-color);
   }
 }
 

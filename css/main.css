@@ -1,6 +1,7 @@
 :root {
   --main-text-color: #ffffff;
-  --second-text-color: #e30a17;
+  --accent-text-color: #a96728;
+  --second-text-color: #f5deb3;
   --bold-weight: 700;
   --medium-weight: 500;
   --small-size: 14px;
@@ -124,18 +125,16 @@ img {
 
 .logo {
   display: flex;
+  align-items: flex-end;
   font-weight: var(--bold-weight);
   font-size: var(--medium-size);
   line-height: 1.17;
   letter-spacing: var(--main-ls);
   color: var(--main-text-color);
 }
-.logo span {
-  color: black;
-}
 .logo svg {
   margin-left: 5px;
-  fill: #a96728;
+  fill: var(--accent-text-color);
 }
 
 .navbar {
@@ -233,8 +232,9 @@ img {
 
 .btn {
   cursor: pointer;
-  border: 1px solid var(--main-text-color);
+  border: none;
   margin-top: 15px;
+  z-index: 10;
   max-width: 200px;
   min-width: 200px;
   padding: 10px 30px;
@@ -245,15 +245,16 @@ img {
   font-size: var(--medium-size);
   line-height: 1.88;
   letter-spacing: var(--secondary-ls);
-  color: #ffffff;
-  background: #e30a17;
-  box-shadow: 0px 2px 4px #831219;
+  color: var(--second-text-color);
+  background: var(--accent-text-color);
+  box-shadow: 0px 2px 4px var(--second-text-color);
 }
 .btn a {
   color: inherit;
 }
 .btn:hover, .btn:focus {
-  color: var(--second-text-color);
+  color: var(--accent-text-color);
+  z-index: 1;
 }
 .btn::before {
   content: "";
@@ -261,8 +262,7 @@ img {
   left: 0;
   width: 100%;
   height: 0;
-  background: var(--main-text-color);
-  z-index: -1;
+  background: var(--second-text-color);
   transition: 0.8s;
   top: 0;
   border-radius: 0 0 50% 50%;
