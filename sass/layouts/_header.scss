@@ -28,16 +28,15 @@
 
   & svg {
     margin-left: 5px;
-    fill: var(--accent-text-color);
+    fill: var(--main-text-color);
   }
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px 0;
-  border-bottom: 1px solid #ffffff;
 
   @include mq(mobile-only) {
     display: none;
@@ -46,7 +45,9 @@
 
 .header__list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-end;
 
   & li a {
     color: var(--main-text-color);

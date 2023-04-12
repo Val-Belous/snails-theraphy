@@ -46,20 +46,3 @@ img {
     padding-bottom: 94px;
   }
 }
-
-.section-title {
-  color: var(--primary-text-color);
-
-  font-weight: var(--bold-weight);
-  font-size: var(--mobile-size);
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: var(--main-ls);
-
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-    font-size: var(--large-size);
-  }
-}
